@@ -45,11 +45,11 @@ docker compose up --build
 ```
 
 2. Access Airflow UI
-   • URL: http://localhost:8080
-   • Login: airflow
-   • Password: airflow
+
+- URL: http://localhost:8080
+- Login: airflow
+- Password: airflow
 
 ## 📚 References
 
 This project learns from the GitHub repository: justinbchau/custom-elt-project
-# dbt-airflow-exercise
