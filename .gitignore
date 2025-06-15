@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# dbt artifacts
+dbt_packages/
+target/
+dbt_modules/
+manifest.json
+run_results.json
+profiles.yml
+
+# Airflow
+airflow/airflow.db
+airflow/unittests.cfg
+logs/
+*.pid
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+.env
+.env.*
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Local configuration
+*.local
+*.bak
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
