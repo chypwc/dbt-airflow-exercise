@@ -1,0 +1,48 @@
+[0m01:50:24.206096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d0cc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f1b890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f1b9d0>]}
+
+
+============================== 01:50:24.209452 | b8a3ad70-9b35-4082-ac14-0d23f4c08040 ==============================
+[0m01:50:24.209452 [info ] [MainThread]: Running with dbt=1.9.6
+[0m01:50:24.209776 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/cy/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:50:24.217719 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/Users/cy/.dbt')}
+[0m01:50:24.217936 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m01:51:22.004560 [debug] [MainThread]: Starter project path: /Users/cy/Documents/Courses/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m01:51:22.018206 [info ] [MainThread]: 
+Your new dbt project "customer_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:51:22.018638 [info ] [MainThread]: Setting up your profile.
+[0m02:01:48.917301 [info ] [MainThread]: Profile customer_postgres written to /Users/cy/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m02:01:48.929820 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 684.75116, "process_in_blocks": "0", "process_kernel_time": 0.13625, "process_mem_max_rss": "101269504", "process_out_blocks": "0", "process_user_time": 0.650987}
+[0m02:01:48.930954 [debug] [MainThread]: Command `dbt init` succeeded at 02:01:48.930735 after 684.75 seconds
+[0m02:01:48.931995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090a4fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a2fbf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fdd370>]}
+[0m02:01:48.932692 [debug] [MainThread]: Flushing usage events
+[0m02:01:50.018704 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:12:32.108150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f90c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a39d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a3890>]}
+
+
+============================== 18:12:32.111048 | 31658fcd-42e8-41df-b436-3d36b851fb86 ==============================
+[0m18:12:32.111048 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:12:32.111411 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/cy/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt source snapshot-freshness', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:12:32.111795 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/cy/Documents/Courses/data_engineering_youtube/elt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:12:32.126932 [debug] [MainThread]: Resource report: {"command_name": "freshness", "command_success": false, "command_wall_clock_time": 0.056771874, "process_in_blocks": "0", "process_kernel_time": 0.11864, "process_mem_max_rss": "102727680", "process_out_blocks": "0", "process_user_time": 0.644326}
+[0m18:12:32.127218 [debug] [MainThread]: Command `dbt source snapshot-freshness` failed at 18:12:32.127161 after 0.06 seconds
+[0m18:12:32.127411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071c1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071d5c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10707a030>]}
+[0m18:12:32.127593 [debug] [MainThread]: Flushing usage events
+[0m18:12:33.125708 [debug] [MainThread]: An error was encountered while trying to flush usage events
